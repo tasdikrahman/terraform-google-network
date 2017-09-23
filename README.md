@@ -6,7 +6,7 @@ Manages a network within GCE
 
 ```hcl
 module "network" {
-  source = "github.com/tasdikrahman/terraform-gcp-network"
+  source = "tasdikrahman/network/gcp"
   name   = "${var.name}"
 }
 ```
