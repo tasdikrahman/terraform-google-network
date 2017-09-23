@@ -1,10 +1,12 @@
 ### Network Google Cloud Platform 
 
+Manages a network within GCE
+
 ##### Example (minimum)
 
 ```hcl
 module "network" {
-  source = "github.com/tasdikrahman/tf-module-gcp-network"
+  source = "github.com/tasdikrahman/terraform-gcp-network"
   name   = "${var.name}"
 }
 ```
@@ -23,6 +25,12 @@ module "network" {
 | gateway_ipv4 | The IPv4 address of the gateway |
 | name | The unique name of the network |
 | self_link | The URL of the created resource |
+
+#### Docs 
+
+- https://cloud.google.com/compute/docs/vpc
+- https://www.terraform.io/docs/providers/google/r/compute_network.html
+
 
 ### LICENSE
 
