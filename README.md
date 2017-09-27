@@ -6,7 +6,7 @@ Manages a network within GCE
 
 ```hcl
 module "network" {
-  source = "tasdikrahman/network/gcp"
+  source = "tasdikrahman/network/google"
   name   = "${var.name}"
 }
 ```
